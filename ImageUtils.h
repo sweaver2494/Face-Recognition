@@ -21,9 +21,9 @@
 
 
 // OpenCV
-#include <cv.h>
+#include "opencv/cv.h"
 //#include <cvaux.h>
-#include <cxcore.h>
+#include "opencv/cxcore.h"
 #ifdef USE_HIGHGUI
     #include <highgui.h>
 #endif
