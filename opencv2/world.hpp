@@ -43,7 +43,7 @@
 #ifndef __OPENCV_WORLD_HPP__
 #define __OPENCV_WORLD_HPP__
 
-#include "opencv2/core.hpp"
+#include "core.hpp"
 
 #ifdef __cplusplus
 namespace cv

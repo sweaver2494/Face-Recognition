@@ -56,7 +56,7 @@
 #  define HAVE_IPL
 #endif
 
-#include "opencv2/core/cvdef.h"
+#include "cvdef.h"
 
 #ifndef SKIP_INCLUDES
 #include <assert.h>

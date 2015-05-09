@@ -49,7 +49,7 @@
 #  error utility.hpp header must be compiled as C++
 #endif
 
-#include "opencv2/core.hpp"
+#include "../core.hpp"
 
 namespace cv
 {
@@ -762,7 +762,7 @@ template<> inline std::string CommandLineParser::get<std::string>(const String& 
 } //namespace cv
 
 #ifndef DISABLE_OPENCV_24_COMPATIBILITY
-#include "opencv2/core/core_c.h"
+#include "core_c.h"
 #endif
 
 #endif //__OPENCV_CORE_UTILITY_H__

@@ -44,9 +44,9 @@
 #ifndef __OPENCV_CALIB3D_HPP__
 #define __OPENCV_CALIB3D_HPP__
 
-#include "opencv2/core.hpp"
-#include "opencv2/features2d.hpp"
-#include "opencv2/core/affine.hpp"
+#include "core.hpp"
+#include "features2d.hpp"
+#include "core/affine.hpp"
 
 /**
   @defgroup calib3d Camera Calibration and 3D Reconstruction

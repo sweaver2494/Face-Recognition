@@ -43,16 +43,16 @@
 #ifndef __OPENCV_ALL_HPP__
 #define __OPENCV_ALL_HPP__
 
-#include "opencv2/core.hpp"
-#include "opencv2/imgproc.hpp"
-#include "opencv2/photo.hpp"
-#include "opencv2/video.hpp"
-#include "opencv2/features2d.hpp"
-#include "opencv2/objdetect.hpp"
-#include "opencv2/calib3d.hpp"
-#include "opencv2/imgcodecs.hpp"
-#include "opencv2/videoio.hpp"
-#include "opencv2/highgui.hpp"
-#include "opencv2/ml.hpp"
+#include "core.hpp"
+#include "imgproc.hpp"
+#include "photo.hpp"
+#include "video.hpp"
+#include "features2d.hpp"
+#include "objdetect.hpp"
+#include "calib3d.hpp"
+#include "imgcodecs.hpp"
+#include "videoio.hpp"
+#include "highgui.hpp"
+#include "ml.hpp"
 
 #endif

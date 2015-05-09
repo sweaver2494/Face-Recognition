@@ -43,8 +43,8 @@
 #ifndef __OPENCV_FEATURES_2D_HPP__
 #define __OPENCV_FEATURES_2D_HPP__
 
-#include "opencv2/core.hpp"
-#include "opencv2/flann/miniflann.hpp"
+#include "core.hpp"
+#include "flann/miniflann.hpp"
 
 /**
   @defgroup features2d 2D Features Framework

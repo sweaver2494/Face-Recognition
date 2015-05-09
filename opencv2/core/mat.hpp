@@ -48,10 +48,10 @@
 #  error mat.hpp header must be compiled as C++
 #endif
 
-#include "opencv2/core/matx.hpp"
-#include "opencv2/core/types.hpp"
+#include "matx.hpp"
+#include "types.hpp"
 
-#include "opencv2/core/bufferpool.hpp"
+#include "bufferpool.hpp"
 
 namespace cv
 {
@@ -3389,6 +3389,6 @@ CV_EXPORTS MatExpr abs(const MatExpr& e);
 
 } // cv
 
-#include "opencv2/core/mat.inl.hpp"
+#include "mat.inl.hpp"
 
 #endif // __OPENCV_CORE_MAT_HPP__

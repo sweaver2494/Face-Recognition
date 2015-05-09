@@ -1,7 +1,7 @@
 #ifndef __OPENCV_TS_PERF_HPP__
 #define __OPENCV_TS_PERF_HPP__
 
-#include "opencv2/core.hpp"
+#include "../core.hpp"
 #include "ts_gtest.h"
 #include "ts_ext.hpp"
 

@@ -1,7 +1,7 @@
 #ifndef __OPENCV_GTESTCV_HPP__
 #define __OPENCV_GTESTCV_HPP__
 
-#include "opencv2/core/cvdef.h"
+#include "core/cvdef.h"
 #include <stdarg.h> // for va_list
 
 #include "cvconfig.h"
@@ -25,8 +25,8 @@
 #define GTEST_DONT_DEFINE_ASSERT_GT 0
 #define GTEST_DONT_DEFINE_TEST      0
 
-#include "opencv2/ts/ts_gtest.h"
-#include "opencv2/ts/ts_ext.hpp"
+#include "ts/ts_gtest.h"
+#include "ts/ts_ext.hpp"
 
 #ifndef GTEST_USES_SIMPLE_RE
 #  define GTEST_USES_SIMPLE_RE 0
@@ -35,8 +35,8 @@
 #  define GTEST_USES_POSIX_RE 0
 #endif
 
-#include "opencv2/core.hpp"
-#include "opencv2/core/utility.hpp"
+#include "core.hpp"
+#include "core/utility.hpp"
 
 namespace cvtest
 {
@@ -587,4 +587,4 @@ int main(int argc, char **argv) \
 
 #endif
 
-#include "opencv2/ts/ts_perf.hpp"
+#include "ts/ts_perf.hpp"

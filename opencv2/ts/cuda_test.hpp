@@ -45,12 +45,12 @@
 
 #include <stdexcept>
 #include "cvconfig.h"
-#include "opencv2/core.hpp"
-#include "opencv2/core/cuda.hpp"
-#include "opencv2/imgcodecs.hpp"
-#include "opencv2/highgui.hpp"
-#include "opencv2/imgproc.hpp"
-#include "opencv2/ts.hpp"
+#include "../core.hpp"
+#include "../core/cuda.hpp"
+#include "../imgcodecs.hpp"
+#include "../highgui.hpp"
+#include "../imgproc.hpp"
+#include "../ts.hpp"
 
 namespace cvtest
 {

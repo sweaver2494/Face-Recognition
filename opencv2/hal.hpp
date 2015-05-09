@@ -45,7 +45,7 @@
 #ifndef __OPENCV_HAL_HPP__
 #define __OPENCV_HAL_HPP__
 
-#include "opencv2/hal/defs.h"
+#include "hal/defs.h"
 
 /**
   @defgroup hal Hardware Acceleration Layer

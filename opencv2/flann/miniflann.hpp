@@ -43,8 +43,8 @@
 #ifndef _OPENCV_MINIFLANN_HPP_
 #define _OPENCV_MINIFLANN_HPP_
 
-#include "opencv2/core.hpp"
-#include "opencv2/flann/defines.h"
+#include "../core.hpp"
+#include "defines.h"
 
 namespace cv
 {

@@ -42,16 +42,16 @@
 #ifndef __OPENCV_TS_OCL_TEST_HPP__
 #define __OPENCV_TS_OCL_TEST_HPP__
 
-#include "opencv2/opencv_modules.hpp"
+#include "../opencv_modules.hpp"
 
-#include "opencv2/ts.hpp"
+#include "../ts.hpp"
 
-#include "opencv2/imgcodecs.hpp"
-#include "opencv2/videoio.hpp"
-#include "opencv2/highgui.hpp"
-#include "opencv2/imgproc.hpp"
-#include "opencv2/imgproc/types_c.h"
-#include "opencv2/core/ocl.hpp"
+#include "../imgcodecs.hpp"
+#include "../videoio.hpp"
+#include "../highgui.hpp"
+#include "../imgproc.hpp"
+#include "../imgproc/types_c.h"
+#include "../core/ocl.hpp"
 
 namespace cvtest {
 namespace ocl {

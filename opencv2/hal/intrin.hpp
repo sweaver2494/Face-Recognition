@@ -269,15 +269,15 @@ template<> struct V_TypeTraits<double>
 
 #if CV_SSE2
 
-#include "opencv2/hal/intrin_sse.hpp"
+#include "intrin_sse.hpp"
 
 #elif CV_NEON
 
-#include "opencv2/hal/intrin_neon.hpp"
+#include "intrin_neon.hpp"
 
 #else
 
-#include "opencv2/hal/intrin_cpp.hpp"
+#include "intrin_cpp.hpp"
 
 #endif
 

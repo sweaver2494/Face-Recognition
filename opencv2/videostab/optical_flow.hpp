@@ -43,11 +43,11 @@
 #ifndef __OPENCV_VIDEOSTAB_OPTICAL_FLOW_HPP__
 #define __OPENCV_VIDEOSTAB_OPTICAL_FLOW_HPP__
 
-#include "opencv2/core.hpp"
-#include "opencv2/opencv_modules.hpp"
+#include "../core.hpp"
+#include "../opencv_modules.hpp"
 
 #ifdef HAVE_OPENCV_CUDAOPTFLOW
-  #include "opencv2/cudaoptflow.hpp"
+  #include "../cudaoptflow.hpp"
 #endif
 
 namespace cv

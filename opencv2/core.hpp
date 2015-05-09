@@ -49,15 +49,15 @@
 #  error core.hpp header must be compiled as C++
 #endif
 
-#include "opencv2/core/cvdef.h"
-#include "opencv2/core/version.hpp"
-#include "opencv2/core/base.hpp"
-#include "opencv2/core/cvstd.hpp"
-#include "opencv2/core/traits.hpp"
-#include "opencv2/core/matx.hpp"
-#include "opencv2/core/types.hpp"
-#include "opencv2/core/mat.hpp"
-#include "opencv2/core/persistence.hpp"
+#include "core/cvdef.h"
+#include "core/version.hpp"
+#include "core/base.hpp"
+#include "core/cvstd.hpp"
+#include "core/traits.hpp"
+#include "core/matx.hpp"
+#include "core/types.hpp"
+#include "core/mat.hpp"
+#include "core/persistence.hpp"
 
 /**
 @defgroup core Core functionality

@@ -44,7 +44,7 @@
 #ifndef __OPENCV_OBJDETECT_HPP__
 #define __OPENCV_OBJDETECT_HPP__
 
-#include "opencv2/core.hpp"
+#include "core.hpp"
 
 /**
 @defgroup objdetect Object Detection
@@ -456,10 +456,10 @@ public:
 
 }
 
-#include "opencv2/objdetect/detection_based_tracker.hpp"
+#include "objdetect/detection_based_tracker.hpp"
 
 #ifndef DISABLE_OPENCV_24_COMPATIBILITY
-#include "opencv2/objdetect/objdetect_c.h"
+#include "objdetect/objdetect_c.h"
 #endif
 
 #endif

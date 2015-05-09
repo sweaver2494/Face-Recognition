@@ -48,7 +48,7 @@
 #  error this is a private header which should not be used from outside of the OpenCV library
 #endif
 
-#include "opencv2/core.hpp"
+#include "../core.hpp"
 #include "cvconfig.h"
 
 #ifdef HAVE_EIGEN
@@ -56,7 +56,7 @@
 #    pragma GCC diagnostic ignored "-Wshadow"
 #  endif
 #  include <Eigen/Core>
-#  include "opencv2/core/eigen.hpp"
+#  include "eigen.hpp"
 #endif
 
 #ifdef HAVE_TBB

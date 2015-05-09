@@ -48,9 +48,9 @@
 #  error matx.hpp header must be compiled as C++
 #endif
 
-#include "opencv2/core/cvdef.h"
-#include "opencv2/core/base.hpp"
-#include "opencv2/core/traits.hpp"
+#include "cvdef.h"
+#include "base.hpp"
+#include "traits.hpp"
 
 namespace cv
 {

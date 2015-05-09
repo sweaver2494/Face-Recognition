@@ -44,10 +44,10 @@
 #define __OPENCV_VIDEOSTAB_WOBBLE_SUPPRESSION_HPP__
 
 #include <vector>
-#include "opencv2/core.hpp"
-#include "opencv2/core/cuda.hpp"
-#include "opencv2/videostab/global_motion.hpp"
-#include "opencv2/videostab/log.hpp"
+#include "../core.hpp"
+#include "../core/cuda.hpp"
+#include "global_motion.hpp"
+#include "log.hpp"
 
 namespace cv
 {
