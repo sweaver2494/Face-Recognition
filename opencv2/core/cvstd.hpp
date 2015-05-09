@@ -1054,6 +1054,6 @@ namespace cv
 }
 #endif
 
-#include "opencv2/core/ptr.inl.hpp"
+#include "ptr.inl.hpp"
 
 #endif //__OPENCV_CORE_CVSTD_HPP__

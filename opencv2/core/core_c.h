@@ -2752,7 +2752,7 @@ struct CV_EXPORTS CvType
 
 //! @}
 
-#include "opencv2/core/utility.hpp"
+#include "utility.hpp"
 
 namespace cv
 {

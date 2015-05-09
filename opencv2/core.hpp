@@ -3102,9 +3102,9 @@ template<> struct ParamType<uchar>
 
 } //namespace cv
 
-#include "opencv2/core/operations.hpp"
-#include "opencv2/core/cvstd.inl.hpp"
-#include "opencv2/core/utility.hpp"
-#include "opencv2/core/optim.hpp"
+#include "core/operations.hpp"
+#include "core/cvstd.inl.hpp"
+#include "core/utility.hpp"
+#include "core/optim.hpp"
 
 #endif /*__OPENCV_CORE_HPP__*/
