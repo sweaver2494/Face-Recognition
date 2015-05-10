@@ -27,12 +27,21 @@ import os.path
 if __name__ == "__main__":
 
 
-    BASE_PATH="C:\\Users\\Scott\\Documents\\GitHub\\Face-Recognition\\photos\\cropped\\"
+    BASE_PATH=path = "C:\\Users\\Scott\\Documents\\GitHub\\Face-Recognition\\photos\\cropped\\"
     SEPARATOR=";"
+
+    fd = open(BASE_PATH+"photos.csv",w)
+    fd.close()
+    fd = open(BASE_PATH+"photos.csv",a)
 
     label = 0
     for dirname, dirnames, filenames in os.walk(BASE_PATH):
-        for filename in os.listdir(subject_path):
-            abs_path = "%s/%s" % (subject_path, filename)
-            print "%s%s%d" % (abs_path, SEPARATOR, label)
-        label = label + 1
+        for subdirname in dirnames:
+            subject_path = os.path.join(dirname, subdirname)
+            for filename in os.listdir(subject_path):
+                abs_path = "%s/%s" % (subject_path, filename)
+                print "%s%s%d" % (abs_path, SEPARATOR, label)
+                fd.write("%s%s%d\n" % (abs_path, SEPARATOR, label))
+            label = label + 1
+    
+    fd.close()
