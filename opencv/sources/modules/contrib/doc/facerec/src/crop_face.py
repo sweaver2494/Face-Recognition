@@ -82,8 +82,27 @@ def CropFace(image, eye_left=(0,0), eye_right=(0,0), offset_pct=(0.2,0.2), dest_
   return image
 
 if __name__ == "__main__":
-  image =  Image.open("arnie.jpg")
-  CropFace(image, eye_left=(252,364), eye_right=(420,366), offset_pct=(0.1,0.1), dest_sz=(200,200)).save("arnie_10_10_200_200.jpg")
-  CropFace(image, eye_left=(252,364), eye_right=(420,366), offset_pct=(0.2,0.2), dest_sz=(200,200)).save("arnie_20_20_200_200.jpg")
-  CropFace(image, eye_left=(252,364), eye_right=(420,366), offset_pct=(0.3,0.3), dest_sz=(200,200)).save("arnie_30_30_200_200.jpg")
-  CropFace(image, eye_left=(252,364), eye_right=(420,366), offset_pct=(0.2,0.2)).save("arnie_20_20_70_70.jpg")
+  path = "C:\\Users\\Scott\\Documents\\GitHub\\Face-Recognition\\photos\\"
+  image =  Image.open(path + "scott1.jpg")
+  CropFace(image, eye_left=(262,218), eye_right=(384,217), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(path + "scott1_10_10_200_200.jpg")
+  CropFace(image, eye_left=(262,218), eye_right=(384,217), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(path + "scott1_20_20_200_200.jpg")
+  CropFace(image, eye_left=(262,218), eye_right=(384,217), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(path + "scott1_30_30_200_200.jpg")
+  CropFace(image, eye_left=(262,218), eye_right=(384,217), offset_pct=(0.2,0.2)).save(path + "scott1_20_20_70_70.jpg")
+
+  image =  Image.open(path + "scott2.jpg")
+  CropFace(image, eye_left=(272,197), eye_right=(382,198), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(path + "scott2_10_10_200_200.jpg")
+  CropFace(image, eye_left=(272,197), eye_right=(382,198), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(path + "scott2_20_20_200_200.jpg")
+  CropFace(image, eye_left=(272,197), eye_right=(382,198), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(path + "scott2_30_30_200_200.jpg")
+  CropFace(image, eye_left=(272,197), eye_right=(382,198), offset_pct=(0.2,0.2)).save(path + "scott2_20_20_70_70.jpg")
+
+  image =  Image.open(path + "scott3.jpg")
+  CropFace(image, eye_left=(236,227), eye_right=(381,222), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(path + "scott3_10_10_200_200.jpg")
+  CropFace(image, eye_left=(236,227), eye_right=(381,222), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(path + "scott3_20_20_200_200.jpg")
+  CropFace(image, eye_left=(236,227), eye_right=(381,222), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(path + "scott3_30_30_200_200.jpg")
+  CropFace(image, eye_left=(236,227), eye_right=(381,222), offset_pct=(0.2,0.2)).save(path + "scott3_20_20_70_70.jpg")
+
+  image =  Image.open(path + "scott1.jpg")
+  CropFace(image, eye_left=(264,222), eye_right=(410,218), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(path + "scott4_10_10_200_200.jpg")
+  CropFace(image, eye_left=(264,222), eye_right=(410,218), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(path + "scott4_20_20_200_200.jpg")
+  CropFace(image, eye_left=(264,222), eye_right=(410,218), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(path + "scott4_30_30_200_200.jpg")
+  CropFace(image, eye_left=(264,222), eye_right=(410,218), offset_pct=(0.2,0.2)).save(path + "scott4_20_20_70_70.jpg")
