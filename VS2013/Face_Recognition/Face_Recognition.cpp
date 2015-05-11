@@ -50,7 +50,7 @@ static void read_csv(const string& filename, vector<Mat>& images, vector<int>& l
 int main(int argc, const char *argv[]) {
 	// Check for valid command line arguments, print usage
 	// if no arguments were given.
-	if (argc != 4) {
+	/*if (argc != 4) {
 		cout << "usage: " << argv[0] << " </path/to/haar_cascade> </path/to/csv.ext> </path/to/device id>" << endl;
 		cout << "\t </path/to/haar_cascade> -- Path to the Haar Cascade for face detection." << endl;
 		cout << "\t </path/to/csv.ext> -- Path to the CSV file with the face database." << endl;
@@ -60,10 +60,18 @@ int main(int argc, const char *argv[]) {
 	// Get the path to your CSV:
 	string fn_haar = string(argv[1]);
 	string fn_csv = string(argv[2]);
-	int deviceId = atoi(argv[3]);
+	int deviceId = atoi(argv[3]);*/
+	string fn_haar = "C:/OpenCV2411/opencv/sources/data/haarcascades/haarcascade_frontalface_default.xml";
+	string fn_csv = "C:/Users/Scott/Documents/GitHub/Face-Recognition/photos/cropped/photos_csv.ext";
+	int deviceId = 0; //webcam device id
 	// These vectors hold the images and corresponding labels:
 	vector<Mat> images;
 	vector<int> labels;
+	// maps each class/label to the corresponding name
+	map<int, string> mymap;
+	mymap[0] = "Reena";
+	mymap[1] = "Scott";
+
 	// Read in the data (fails if no valid input filename is given, but you'll get an error message):
 	try {
 		read_csv(fn_csv, images, labels);
@@ -73,6 +81,7 @@ int main(int argc, const char *argv[]) {
 		// nothing more we can do
 		exit(1);
 	}
+
 	// Get the height from the first image. We'll need this
 	// later in code to reshape the images to their original
 	// size AND we need to reshape incoming faces to this size:
@@ -87,7 +96,10 @@ int main(int argc, const char *argv[]) {
 	// command line arguments:
 	//
 	CascadeClassifier haar_cascade;
-	haar_cascade.load(fn_haar);
+	if (!haar_cascade.load(fn_haar)){ 
+		cerr << "--(!)Error loading xml" << endl;
+		return -1;
+	};
 	// Get a handle to the Video device:
 	VideoCapture cap(deviceId);
 	// Check if we can use this device at all:
@@ -133,7 +145,7 @@ int main(int argc, const char *argv[]) {
 			// First of all draw a green rectangle around the detected face:
 			rectangle(original, face_i, CV_RGB(0, 255, 0), 1);
 			// Create the text we will annotate the box with:
-			string box_text = format("Prediction = %d", prediction);
+			string box_text = format("Prediction = %d : %s", prediction, mymap[prediction]);
 			// Calculate the position for annotated text (make sure we don't
 			// put illegal values in there):
 			int pos_x = std::max(face_i.tl().x - 10, 0);
