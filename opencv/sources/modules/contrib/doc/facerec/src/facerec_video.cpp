@@ -16,6 +16,8 @@
  *   See <http://www.opensource.org/licenses/bsd-license>
  */
 
+#include <stdafx.h>
+
 #include "opencv2/core/core.hpp"
 #include "opencv2/contrib/contrib.hpp"
 #include "opencv2/highgui/highgui.hpp"
@@ -56,11 +58,15 @@ int main(int argc, const char *argv[]) {
         cout << "\t </path/to/csv.ext> -- Path to the CSV file with the face database." << endl;
         cout << "\t <device id> -- The webcam device id to grab frames from." << endl;
         exit(1);
-    }*/
+    }
     // Get the path to your CSV:
-    string fn_haar = string(argv[1]);************
-    string fn_csv = string(argv[2]);************
-    int deviceId = atoi(argv[3]);*************
+    string fn_haar = string(argv[1]);
+    string fn_csv = string(argv[2]);
+    int deviceId = atoi(argv[3]);
+    */
+    string fn_haar = "C:\\Users\\Scott\\Documents\\GitHub\\Face-Recognition\\opencv\\sources\\data\\haarcascades\\haarcascade_frontalface_default.xml";
+    string fn_csv = "C:\\Users\\Scott\\Documents\\GitHub\\Face-Recognition\\photos\\cropped\\photos.csv";
+    int deviceId = 163;
     // These vectors hold the images and corresponding labels:
     vector<Mat> images;
     vector<int> labels;
