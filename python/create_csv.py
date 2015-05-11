@@ -26,12 +26,12 @@ import os.path
 
 if __name__ == "__main__":
 
-    BASE_PATH=path = "C:\\Users\\Scott\\Documents\\GitHub\\Face-Recognition\\photos\\cropped\\"
+    BASE_PATH= "C:/Users/Scott/Documents/GitHub/Face-Recognition/photos/cropped/"
     SEPARATOR=";"
 
-    fd = open(BASE_PATH+"photos.csv","w")
+    fd = open(BASE_PATH+"photos_csv.ext","w")
     fd.close()
-    fd = open(BASE_PATH+"photos.csv","a")
+    fd = open(BASE_PATH+"photos_csv.ext","a")
 
     label = 0
     for dirname, dirnames, filenames in os.walk(BASE_PATH):

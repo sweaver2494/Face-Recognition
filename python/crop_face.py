@@ -31,7 +31,8 @@
 # ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 
-import sys, math, Image
+import sys, math
+from PIL import Image
 
 def Distance(p1,p2):
   dx = p2[0] - p1[0]
@@ -82,51 +83,44 @@ def CropFace(image, eye_left=(0,0), eye_right=(0,0), offset_pct=(0.2,0.2), dest_
   return image
 
 if __name__ == "__main__":
-  path = "C:\\Users\\Scott\\Documents\\GitHub\\Face-Recognition\\photos\\"
+  path = "C:/Users/Scott/Documents/GitHub/Face-Recognition/photos/uncropped/"
+  cropped_path = "C:/Users/Scott/Documents/GitHub/Face-Recognition/photos/cropped/"
   image =  Image.open(path + "scott1.jpeg")
-  CropFace(image, eye_left=(262,218), eye_right=(384,217), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(path + "scott1_10_10_200_200.jpeg")
-  CropFace(image, eye_left=(262,218), eye_right=(384,217), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(path + "scott1_20_20_200_200.jpeg")
-  CropFace(image, eye_left=(262,218), eye_right=(384,217), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(path + "scott1_30_30_200_200.jpeg")
-  CropFace(image, eye_left=(262,218), eye_right=(384,217), offset_pct=(0.2,0.2)).save(path + "scott1_20_20_70_70.jpeg")
+  CropFace(image, eye_left=(262,218), eye_right=(384,217), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(cropped_path + "scott/scott1_10_10_200_200.jpeg")
+  CropFace(image, eye_left=(262,218), eye_right=(384,217), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(cropped_path + "scott/scott1_20_20_200_200.jpeg")
+  CropFace(image, eye_left=(262,218), eye_right=(384,217), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(cropped_path + "scott/scott1_30_30_200_200.jpeg")
 
   image =  Image.open(path + "scott2.jpeg")
-  CropFace(image, eye_left=(272,197), eye_right=(382,198), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(path + "scott2_10_10_200_200.jpeg")
-  CropFace(image, eye_left=(272,197), eye_right=(382,198), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(path + "scott2_20_20_200_200.jpeg")
-  CropFace(image, eye_left=(272,197), eye_right=(382,198), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(path + "scott2_30_30_200_200.jpeg")
-  CropFace(image, eye_left=(272,197), eye_right=(382,198), offset_pct=(0.2,0.2)).save(path + "scott2_20_20_70_70.jpeg")
-
+  CropFace(image, eye_left=(272,197), eye_right=(382,198), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(cropped_path + "scott/scott2_10_10_200_200.jpeg")
+  CropFace(image, eye_left=(272,197), eye_right=(382,198), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(cropped_path + "scott/scott2_20_20_200_200.jpeg")
+  CropFace(image, eye_left=(272,197), eye_right=(382,198), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(cropped_path + "scott/scott2_30_30_200_200.jpeg")
+  
   image =  Image.open(path + "scott3.jpeg")
-  CropFace(image, eye_left=(236,227), eye_right=(381,222), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(path + "scott3_10_10_200_200.jpeg")
-  CropFace(image, eye_left=(236,227), eye_right=(381,222), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(path + "scott3_20_20_200_200.jpeg")
-  CropFace(image, eye_left=(236,227), eye_right=(381,222), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(path + "scott3_30_30_200_200.jpeg")
-  CropFace(image, eye_left=(236,227), eye_right=(381,222), offset_pct=(0.2,0.2)).save(path + "scott3_20_20_70_70.jpeg")
+  CropFace(image, eye_left=(236,227), eye_right=(381,222), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(cropped_path + "scott/scott3_10_10_200_200.jpeg")
+  CropFace(image, eye_left=(236,227), eye_right=(381,222), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(cropped_path + "scott/scott3_20_20_200_200.jpeg")
+  CropFace(image, eye_left=(236,227), eye_right=(381,222), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(cropped_path + "scott/scott3_30_30_200_200.jpeg")
 
   image =  Image.open(path + "scott4.jpeg")
-  CropFace(image, eye_left=(264,222), eye_right=(410,218), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(path + "scott4_10_10_200_200.jpeg")
-  CropFace(image, eye_left=(264,222), eye_right=(410,218), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(path + "scott4_20_20_200_200.jpeg")
-  CropFace(image, eye_left=(264,222), eye_right=(410,218), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(path + "scott4_30_30_200_200.jpeg")
-  CropFace(image, eye_left=(264,222), eye_right=(410,218), offset_pct=(0.2,0.2)).save(path + "scott4_20_20_70_70.jpeg")
-
+  CropFace(image, eye_left=(264,222), eye_right=(410,218), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(cropped_path + "scott/scott4_10_10_200_200.jpeg")
+  CropFace(image, eye_left=(264,222), eye_right=(410,218), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(cropped_path + "scott/scott4_20_20_200_200.jpeg")
+  CropFace(image, eye_left=(264,222), eye_right=(410,218), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(cropped_path + "scott/scott4_30_30_200_200.jpeg")
+  
   image =  Image.open(path + "reena1.jpeg")
-  CropFace(image, eye_left=(274,195), eye_right=(405,203), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(path + "reena1_10_10_200_200.jpeg")
-  CropFace(image, eye_left=(274,195), eye_right=(405,203), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(path + "reena1_20_20_200_200.jpeg")
-  CropFace(image, eye_left=(274,195), eye_right=(405,203), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(path + "reena1_30_30_200_200.jpeg")
-  CropFace(image, eye_left=(274,195), eye_right=(405,203), offset_pct=(0.2,0.2)).save(path + "reena1_20_20_70_70.jpeg")
+  CropFace(image, eye_left=(274,195), eye_right=(405,203), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(cropped_path + "reena/reena1_10_10_200_200.jpeg")
+  CropFace(image, eye_left=(274,195), eye_right=(405,203), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(cropped_path + "reena/reena1_20_20_200_200.jpeg")
+  CropFace(image, eye_left=(274,195), eye_right=(405,203), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(cropped_path + "reena/reena1_30_30_200_200.jpeg")
 
   image =  Image.open(path + "reena2.jpeg")
-  CropFace(image, eye_left=(270,194), eye_right=(412,203), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(path + "reena2_10_10_200_200.jpeg")
-  CropFace(image, eye_left=(270,194), eye_right=(412,203), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(path + "reena2_20_20_200_200.jpeg")
-  CropFace(image, eye_left=(270,194), eye_right=(412,203), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(path + "reena2_30_30_200_200.jpeg")
-  CropFace(image, eye_left=(270,194), eye_right=(412,203), offset_pct=(0.2,0.2)).save(path + "reena2_20_20_70_70.jpeg")
+  CropFace(image, eye_left=(270,194), eye_right=(412,203), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(cropped_path + "reena/reena2_10_10_200_200.jpeg")
+  CropFace(image, eye_left=(270,194), eye_right=(412,203), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(cropped_path + "reena/reena2_20_20_200_200.jpeg")
+  CropFace(image, eye_left=(270,194), eye_right=(412,203), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(cropped_path + "reena/reena2_30_30_200_200.jpeg")
 
   image =  Image.open(path + "reena3.jpeg")
-  CropFace(image, eye_left=(258,207), eye_right=(407,216), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(path + "reena3_10_10_200_200.jpeg")
-  CropFace(image, eye_left=(258,207), eye_right=(407,216), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(path + "reena3_20_20_200_200.jpeg")
-  CropFace(image, eye_left=(258,207), eye_right=(407,216), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(path + "reena3_30_30_200_200.jpeg")
-  CropFace(image, eye_left=(258,207), eye_right=(407,216), offset_pct=(0.2,0.2)).save(path + "reena3_20_20_70_70.jpeg")
+  CropFace(image, eye_left=(258,207), eye_right=(407,216), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(cropped_path + "reena/reena3_10_10_200_200.jpeg")
+  CropFace(image, eye_left=(258,207), eye_right=(407,216), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(cropped_path + "reena/reena3_20_20_200_200.jpeg")
+  CropFace(image, eye_left=(258,207), eye_right=(407,216), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(cropped_path + "reena/reena3_30_30_200_200.jpeg")
 
   image =  Image.open(path + "reena4.jpeg")
-  CropFace(image, eye_left=(305,252), eye_right=(392,261), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(path + "reena4_10_10_200_200.jpeg")
-  CropFace(image, eye_left=(305,252), eye_right=(392,261), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(path + "reena4_20_20_200_200.jpeg")
-  CropFace(image, eye_left=(305,252), eye_right=(392,261), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(path + "reena4_30_30_200_200.jpeg")
-  CropFace(image, eye_left=(305,252), eye_right=(392,261), offset_pct=(0.2,0.2)).save(path + "reena4_20_20_70_70.jpeg")
+  CropFace(image, eye_left=(305,252), eye_right=(392,261), offset_pct=(0.1,0.1), dest_sz=(200,200)).save(cropped_path + "reena/reena4_10_10_200_200.jpeg")
+  CropFace(image, eye_left=(305,252), eye_right=(392,261), offset_pct=(0.2,0.2), dest_sz=(200,200)).save(cropped_path + "reena/reena4_20_20_200_200.jpeg")
+  CropFace(image, eye_left=(305,252), eye_right=(392,261), offset_pct=(0.3,0.3), dest_sz=(200,200)).save(cropped_path + "reena/reena4_30_30_200_200.jpeg")
